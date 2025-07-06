@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet Accra</title>
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    function toggleNav() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
       <div class="logo">Meet Accra</div>
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
       <ul class="nav-links">
         <li><a href="#explore">Explore</a></li>
         <li><a href="#things">Things to Do</a></li>
@@ -130,3 +137,4 @@
   </footer>
 </body>
 </html>
+
